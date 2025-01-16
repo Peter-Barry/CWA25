@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App</title>
+    <title>Chart Dashboard</title>
 </head>
 <body>
-    <h1>{{ message }}</h1> <!-- Renders the 'message' variable -->
+    <h1>Charts</h1>
+    <h2>Bar Chart</h2>
+    <div>{{ bar_chart|safe }}</div>
+    <h2>Line Chart</h2>
+    <div>{{ line_chart|safe }}</div>
+    <h2>Scatter Plot</h2>
+    <div>{{ scatter_chart|safe }}</div>
 </body>
 </html>
